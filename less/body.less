@@ -1,0 +1,31 @@
+main {
+    margin: 0 5%;
+    // height: 2000px;
+  }
+.banner{
+    .flex();
+    background: url(../images/deskPhoto.jpg) 100%/cover fixed no-repeat;
+    height: 100vh;
+    width:100%;
+    text-align: center;
+    div{
+        background-color: #3339;
+        .flex(@direction:column);   
+        h1{
+            color: @green;
+            font-weight: bolder;
+        }
+        h2, h3{
+            color: @grey;
+            font-weight: bold;
+        }
+        button{
+            width:fit-content;
+            margin:3%;
+            border-radius: 30px;
+            background-color: @grey;
+            border: none;
+            white-space: nowrap;
+        }
+    }
+}
