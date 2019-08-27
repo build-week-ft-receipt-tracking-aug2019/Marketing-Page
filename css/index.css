@@ -88,8 +88,37 @@ header button:hover {
 .header-image {
   width: 100%;
 }
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+.all-teams {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.team-lead {
+  width: 30%;
+  margin: 0 auto;
+  padding: 2rem 5rem;
+  text-align: left;
+}
 .team-row {
   display: flex;
+}
+.team-member {
+  width: 30%;
+  margin: 0 auto;
+  padding: 2rem 5rem;
+  text-align: left;
+}
+.team-member:hover {
+  background-color: #5bba6f;
+  color: white;
+}
+.social {
+  display: flex;
+  justify-content: space-evenly;
 }
 footer {
   width: 100%;
