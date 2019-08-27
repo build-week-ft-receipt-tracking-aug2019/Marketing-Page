@@ -2,7 +2,10 @@ main {
     padding: 0 5%;
     // height: 2000px;
     width:100%;
-  }
+    @media @mobile {
+        padding: 0
+    }
+}
 .banner{
     .flex();
     background: url(../images/deskPhoto.jpg) 100%/cover fixed no-repeat;
@@ -11,18 +14,25 @@ main {
     text-align: center;
     div{
         background-color: #3339;
+        padding: 3%;
+        width:45%;
         .flex(@direction:column);   
+       @media @mobile{
+           width:90%;
+       }
         h1{
             color: @green;
             font-weight: bolder;
+
         }
         h2, h3{
             color: @grey;
             font-weight: bold;
         }
         button{
+            padding: 5% 20%;
             width:fit-content;
-            margin:3%;
+            margin:5% 0;
             border-radius: 30px;
             background-color: @grey;
             border: none;
@@ -44,6 +54,9 @@ main {
             font-size: 2.4rem;
             font-weight:bolder;
         }
+        p{
+            max-width: 70ch;
+        }
     }
     img{
         width:48%;
@@ -51,20 +64,26 @@ main {
 }
 .images{
     width:100%;
-   .flex(@direction:row-reverse,@justify:space-between);
+    margin: 5% 0;
+    .flex(@direction:row-reverse,@justify:space-between);
+    background-color: @darkGreen;
+    color: @white;
    .text{
        width:48%;
        b{
             font-size: 2.4rem;
             font-weight: 900;
        }
+       p{
+        max-width: 70ch;
+    }
    }
    img{
        width: 48%;
    }
 }
 .search{
-    
+    margin-bottom: 3%;
     width:100%;
     height:50vh;
     .flex(@justify:flex-start;);
@@ -76,19 +95,23 @@ main {
             font-weight: 900; 
             font-size: 2.4rem;
         }
+        p{
+            max-width: 70ch;
+        }
     }
     .notebook{
         width:50%;
-        height:40vh;
+        height:50vh;
         background: url(../images/notebook.jpg);
         background-repeat: no-repeat;
-        background-size: contain;
-        padding-top: 4%;
+        background-size: cover;
+        background-position: fixed;
+        padding-top: 8%;
         .listItem{
             list-style-type: none;
         }
         li{
-            padding:0 0 0 8%;
+            padding:0 0 0 15%;
             list-style: disc;
             list-style-position: inside;
             
