@@ -14,24 +14,26 @@
 }
 .team-lead {
     width: 30%;
-    margin: 0 auto;
+    margin: 10rem auto;
     padding: 2rem 5rem;
     text-align: left;
 }
 
 .team-lead-photo {
     width: 30%;
-    height: 30%;
+    height: 10%;
     border-radius: 50%;
 }
 
 .team-lead-image {
     width: 100%;
     border-radius: 50%;
-    position: relative;
-    top: -64px;
-    right: -90px;
-    
+    //position: relative;
+    //top: -64px;
+    //right: -90px;   
+    //z-index: -10;
+    margin-left: 80px;
+    margin-top: -73px;
 
 }
 
@@ -43,17 +45,51 @@
 .team-member {
     width: 30%;
     margin: 0 auto;
-    padding: 2rem 5rem;
-    text-align: left;
+    padding: 0 5rem;
+    text-align: left;   
     border: 1px solid @grey;
+}
+
+.team-member h3 {
+    color: green;
 }
 
 .team-member:hover {
     background-color: @lightGreen;
-    color: white;
+    color: @white;
 }
 
 .social {
     display: flex;
     justify-content: space-evenly;
+    margin: 2rem;
+    color: @darkGreen;
+}
+
+.social:hover {
+    color: @white;
+}
+
+.products-services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 9rem;
+}
+
+.products-section {
+    display: flex;
+    margin-top: 4rem;  
+    
+}
+
+.products-section h2 {
+    color: @lightGreen;
+}
+
+.products {
+    margin: 0 auto;
+    padding: 0 5rem;
+
 }

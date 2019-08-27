@@ -99,21 +99,20 @@ header button:hover {
 }
 .team-lead {
   width: 30%;
-  margin: 0 auto;
+  margin: 10rem auto;
   padding: 2rem 5rem;
   text-align: left;
 }
 .team-lead-photo {
   width: 30%;
-  height: 30%;
+  height: 10%;
   border-radius: 50%;
 }
 .team-lead-image {
   width: 100%;
   border-radius: 50%;
-  position: relative;
-  top: -64px;
-  right: -90px;
+  margin-left: 80px;
+  margin-top: -73px;
 }
 .team-row {
   display: flex;
@@ -122,17 +121,43 @@ header button:hover {
 .team-member {
   width: 30%;
   margin: 0 auto;
-  padding: 2rem 5rem;
+  padding: 0 5rem;
   text-align: left;
   border: 1px solid #e6e8e6;
 }
+.team-member h3 {
+  color: green;
+}
 .team-member:hover {
   background-color: #5bba6f;
-  color: white;
+  color: #ffffff;
 }
 .social {
   display: flex;
   justify-content: space-evenly;
+  margin: 2rem;
+  color: #003b36;
+}
+.social:hover {
+  color: #ffffff;
+}
+.products-services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 9rem;
+}
+.products-section {
+  display: flex;
+  margin-top: 4rem;
+}
+.products-section h2 {
+  color: #5bba6f;
+}
+.products {
+  margin: 0 auto;
+  padding: 0 5rem;
 }
 footer {
   width: 100%;
