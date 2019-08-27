@@ -17,7 +17,7 @@ main {
         padding: 3%;
         width:45%;
         .flex(@direction:column);   
-       @media @mobile{
+       @media (max-width: 900px){
            width:90%;
        }
         h1{
@@ -30,7 +30,7 @@ main {
             font-weight: bold;
         }
         button{
-            padding: 5% 20%;
+            padding: 7px 30px;
             width:fit-content;
             margin:5% 0;
             border-radius: 30px;
@@ -48,8 +48,15 @@ main {
     width:100%;
     padding-top: 80px;
     .flex(@justify:space-between);
+    @media @mobile {
+        .flex(@direction:column);
+    }
     .text{
         width:48%;
+        @media @mobile {
+            width:90%;
+            margin-bottom: 50px;
+        }
         b{
             font-size: 2.4rem;
             font-weight:bolder;
@@ -60,6 +67,11 @@ main {
     }
     img{
         width:48%;
+        height:50vh;
+        object-fit: cover;
+        @media @mobile {
+            width:90%;
+        }
     }
 }
 .images{
@@ -68,8 +80,15 @@ main {
     .flex(@direction:row-reverse,@justify:space-between);
     background-color: @darkGreen;
     color: @white;
+    @media @mobile {
+        .flex(@direction:column);
+    }
    .text{
        width:48%;
+       @media @mobile{
+           width: 90%;
+           margin-bottom: 50px;
+       }
        b{
             font-size: 2.4rem;
             font-weight: 900;
@@ -80,17 +99,30 @@ main {
    }
    img{
        width: 48%;
+       height:50vh;
+       object-fit: cover;
+       @media @mobile{
+           width:90%;
+       }
    }
 }
 .search{
     margin-bottom: 3%;
     width:100%;
-    height:50vh;
+    height:auto;
     .flex(@justify:flex-start;);
+    @media @mobile {
+        .flex(@direction:column);
+        
+    }
     .text{
         .flex(@direction:column);
         width:50%;
-        height:50vh;
+        min-height:50vh;
+        @media @mobile {
+            margin-bottom: 50px;
+            width:90%;
+        }
         b{
             font-weight: 900; 
             font-size: 2.4rem;
@@ -98,6 +130,7 @@ main {
         p{
             max-width: 70ch;
         }
+
     }
     .notebook{
         width:50%;
@@ -105,13 +138,35 @@ main {
         background: url(../images/notebook.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: fixed;
-        padding-top: 8%;
+        
+       
+        
+        @media @mobile {
+            width:90%;
+        }
+        ul{
+            position: relative;
+            top: 20%;
+            left: 14%;
+            width: 50%;
+        @media(max-width:1100px){
+            left: 23%;
+            top:18%;
+        }
+        @media(max-width:600px){
+            left: 37%;
+            top:23%;
+        }
+        @media(max-width:500px){
+            left: 28%;
+            top:23%;
+        }
+        }
         .listItem{
             list-style-type: none;
         }
         li{
-            padding:0 0 0 15%;
+           
             list-style: disc;
             list-style-position: inside;
             
