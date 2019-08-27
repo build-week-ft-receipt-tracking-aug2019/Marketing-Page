@@ -103,14 +103,28 @@ header button:hover {
   padding: 2rem 5rem;
   text-align: left;
 }
+.team-lead-photo {
+  width: 30%;
+  height: 30%;
+  border-radius: 50%;
+}
+.team-lead-image {
+  width: 100%;
+  border-radius: 50%;
+  position: relative;
+  top: -64px;
+  right: -90px;
+}
 .team-row {
   display: flex;
+  margin: 42px 0;
 }
 .team-member {
   width: 30%;
   margin: 0 auto;
   padding: 2rem 5rem;
   text-align: left;
+  border: 1px solid #e6e8e6;
 }
 .team-member:hover {
   background-color: #5bba6f;
