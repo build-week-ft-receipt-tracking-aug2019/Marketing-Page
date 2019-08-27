@@ -1,6 +1,7 @@
 main {
-    margin: 0 5%;
+    padding: 0 5%;
     // height: 2000px;
+    width:100%;
   }
 .banner{
     .flex();
@@ -26,6 +27,45 @@ main {
             background-color: @grey;
             border: none;
             white-space: nowrap;
+            cursor: pointer;
+        }
+        a{
+            cursor: pointer;
         }
     }
 }
+.upload{
+    width:100%;
+}
+.images{
+    width:100%;
+}
+.search{
+    width:100%;
+    height:50vh;
+    .flex(@justify:flex-start;);
+    .text{
+        .flex(@direction:column);
+        width:50%;
+        height:50vh;
+    }
+    .notebook{
+        width:50%;
+        height:40vh;
+        background: url(../images/notebook.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding-top: 4%;
+        .listItem{
+            list-style-type: none;
+            
+        }
+        li{
+            padding:0 0 0 8%;
+            list-style: disc;
+            list-style-position: inside;
+            
+        }
+    }
+}
+
