@@ -88,6 +88,9 @@ header button:hover {
 .header-image {
   width: 100%;
 }
+.team-row {
+  display: flex;
+}
 footer {
   width: 100%;
   min-height: 30vh;
