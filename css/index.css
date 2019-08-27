@@ -131,9 +131,40 @@ main {
 }
 .upload {
   width: 100%;
+  padding-top: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.upload .text {
+  width: 48%;
+}
+.upload .text b {
+  font-size: 2.4rem;
+  font-weight: bolder;
+}
+.upload img {
+  width: 48%;
 }
 .images {
   width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.images .text {
+  width: 48%;
+}
+.images .text b {
+  font-size: 2.4rem;
+  font-weight: 900;
+}
+.images img {
+  width: 48%;
 }
 .search {
   width: 100%;
@@ -152,6 +183,10 @@ main {
   flex-wrap: wrap;
   width: 50%;
   height: 50vh;
+}
+.search .text b {
+  font-weight: 900;
+  font-size: 2.4rem;
 }
 .search .notebook {
   width: 50%;
