@@ -52,6 +52,11 @@ header {
   align-items: center;
   flex-direction: row;
 }
+@media (max-width: 800px) {
+  header {
+    display: none;
+  }
+}
 header nav {
   display: flex;
   justify-content: flex-start;
@@ -85,6 +90,56 @@ header button:hover {
   background: #e6e8e6;
   color: #003b36;
 }
+.mobileHeader {
+  display: none;
+  background-color: transparent;
+}
+@media (max-width: 800px) {
+  .mobileHeader {
+    display: block;
+  }
+}
+.mobileHeader .collapsible-menu {
+  background-color: #003b36;
+  padding: 10px 0 10 50px;
+  border-bottom: 3px solid #eee;
+  font-size: 3rem;
+  display: block;
+  cursor: pointer;
+  /********************/
+}
+.mobileHeader .collapsible-menu label {
+  padding-left: 55px;
+  font-family: 'Lato', sans-serif;
+  color: black;
+  background: url(https://image.flaticon.com/icons/svg/462/462998.svg) no-repeat left center;
+  margin-left: 10px;
+  filter: invert(1);
+}
+.mobileHeader .collapsible-menu input:checked ~ label {
+  background: url(https://image.flaticon.com/icons/svg/151/151882.svg) no-repeat left center;
+}
+.mobileHeader .collapsible-menu input:checked ~ .menu-content {
+  max-height: 100%;
+}
+.mobileHeader .collapsible-menu #menu {
+  display: none;
+}
+.mobileHeader .collapsible-menu .menu-content {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 0 0 50px;
+}
+.mobileHeader .collapsible-menu .menu-content ul {
+  list-style-type: none;
+  padding-bottom: 20px;
+  color: #ffffff;
+}
+.mobileHeader .collapsible-menu .menu-content ul a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}
 .header-image {
   width: 100%;
 }
@@ -102,6 +157,11 @@ header button:hover {
   background: black url('/images/banner_image.jpg');
   background-size: cover;
   position: relative;
+  z-index: -1;
+}
+.banner-container h1 {
+  color: white;
+  z-index: 1;
 }
 .banner-color-overlay {
   width: 100%;
@@ -109,10 +169,6 @@ header button:hover {
   background: #003b36;
   opacity: 0.7;
   position: absolute;
-}
-.banner-container h1 {
-  color: white;
-  z-index: 1;
 }
 .trackify {
   width: 80%;
@@ -148,15 +204,15 @@ header button:hover {
   margin: 42px 0;
 }
 .team-member {
-  width: 30%;
+  width: 26%;
   margin: 0 auto;
-  padding: 0 5rem;
+  padding: 1rem 5rem;
   text-align: left;
   border: 1px solid #e6e8e6;
 }
 .team-member h3 {
   color: green;
-  letter-spacing: -1px;
+  letter-spacing: -4px;
 }
 .team-member h5 {
   letter-spacing: -1px;
@@ -170,9 +226,8 @@ header button:hover {
   display: flex;
   justify-content: space-evenly;
   margin: 2rem;
-  color: #003b36;
 }
-.social:hover {
+.social a:hover {
   color: #ffffff;
 }
 .products-services {
@@ -182,14 +237,14 @@ header button:hover {
   margin-top: 2rem;
   margin-bottom: 9rem;
 }
+.products-services h2 {
+  color: #5bba6f;
+}
 .products-section {
   width: 100%;
   display: flex;
   justify-content: center;
   margin-top: 4rem;
-}
-.products-section h2 {
-  color: #5bba6f;
 }
 .get-started {
   padding: 10rem 0;
@@ -198,7 +253,8 @@ header button:hover {
   text-align: center;
   background: radial-gradient(linear, #002407 49%, #05622f 100%, #02a09f 100%, #00d4ff 100%);
 }
-.get-started button {
+.get-started button,
+.header-cta {
   margin-top: 40px;
   padding: 12px 25px;
   width: 10%;
@@ -208,6 +264,7 @@ header button:hover {
   font-size: 15px;
   font-weight: 700;
   letter-spacing: 2px;
+  z-index: 1;
 }
 footer {
   width: 100%;
