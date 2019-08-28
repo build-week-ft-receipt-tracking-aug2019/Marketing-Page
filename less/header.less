@@ -58,7 +58,7 @@
   
   background-color: transparent;
   .collapsible-menu {
-    background-color:@lightGreen; // rgb(255, 255, 255);
+    background-color:@darkGreen; 
     padding: 10px 0 10 50px;
     border-bottom: 3px solid #eee;
     font-size: 3rem;
@@ -67,11 +67,15 @@
     /********************/
     label{
       padding-left: 55px;
-      color: @darkGreen;
-      background: url(https://image.flaticon.com/icons/svg/462/462998.svg)no-repeat left center;
+      font-family: 'Lato', sans-serif;
+      color: black;
+      background: url(https://image.flaticon.com/icons/svg/462/462998.svg)no-repeat left  center;
+      margin-left: 10px;
+      filter: invert(1);
     }
     input:checked ~ label {
       background: url(https://image.flaticon.com/icons/svg/151/151882.svg)no-repeat left center;
+      
     }
     input:checked ~ .menu-content {
       max-height: 100%;
@@ -85,11 +89,12 @@
       padding: 0 0 0 50px;
       ul {
         list-style-type: none;
-        padding: 0;
+        padding-bottom: 20px;
+        color:@white;
         a {
           display:block;
           padding: 10px;
-          text-decoration: none;
+          text-decoration: none; 
         }
       }
     }

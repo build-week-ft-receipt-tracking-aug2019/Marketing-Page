@@ -100,7 +100,7 @@ header button:hover {
   }
 }
 .mobileHeader .collapsible-menu {
-  background-color: #5bba6f;
+  background-color: #003b36;
   padding: 10px 0 10 50px;
   border-bottom: 3px solid #eee;
   font-size: 3rem;
@@ -110,8 +110,11 @@ header button:hover {
 }
 .mobileHeader .collapsible-menu label {
   padding-left: 55px;
-  color: #003b36;
+  font-family: 'Lato', sans-serif;
+  color: black;
   background: url(https://image.flaticon.com/icons/svg/462/462998.svg) no-repeat left center;
+  margin-left: 10px;
+  filter: invert(1);
 }
 .mobileHeader .collapsible-menu input:checked ~ label {
   background: url(https://image.flaticon.com/icons/svg/151/151882.svg) no-repeat left center;
@@ -129,7 +132,8 @@ header button:hover {
 }
 .mobileHeader .collapsible-menu .menu-content ul {
   list-style-type: none;
-  padding: 0;
+  padding-bottom: 20px;
+  color: #ffffff;
 }
 .mobileHeader .collapsible-menu .menu-content ul a {
   display: block;
