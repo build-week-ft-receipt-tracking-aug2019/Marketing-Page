@@ -168,8 +168,19 @@ header button:hover {
     margin-top: -29px;
   }
 }
+@media (max-width: 500px) {
+  .container .banner-container {
+    padding: 30px;
+    line-height: 1px;
+  }
+}
 .container .banner-container h1 {
-  color: white;
+  color: #ffffff;
+  z-index: 1;
+  margin: 0 5px;
+}
+.container .banner-container h5 {
+  color: #ffffff;
   z-index: 1;
 }
 .container .banner-container .banner-color-overlay {
@@ -205,7 +216,7 @@ header button:hover {
 }
 .container .trackify {
   width: 80%;
-  margin: 0 auto;
+  margin: 5rem auto 0 auto;
 }
 .container .all-teams {
   display: flex;
@@ -217,6 +228,14 @@ header button:hover {
 }
 .container .all-teams .meet-the-team {
   margin: 5rem auto;
+}
+@media (max-width: 500px) {
+  .container .all-teams .meet-the-team {
+    margin: 2rem auto;
+  }
+}
+.container .all-teams .meet-the-team p {
+  color: #5bba6f;
 }
 .container .all-teams .team-lead {
   width: 40%;
@@ -286,7 +305,7 @@ header button:hover {
 @media (max-width: 500px) {
   .container .all-teams .team-row .team-member {
     width: 90%;
-    margin: 8rem auto;
+    margin: 5rem auto;
   }
 }
 .container .all-teams .team-row .team-member h3 {
