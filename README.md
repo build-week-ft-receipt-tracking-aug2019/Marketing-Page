@@ -10,4 +10,4 @@ The other sections of our team include the following departments:
 - Frontend
 
 Below is a link to view our entire teams handles for Github and Twitter
-https://docs.google.com/viewer?url=${https://lambdaschoolstudents.slack.com/files/UHF67A9T9/FMEJJETFV/other_components_of_this_project_-_receipt.pdf}
+[Click here to show Google Doc Preview of our Team!](https://docs.google.com/viewer?url=${https://drive.google.com/open?id=17MG1lNP8OlkuF_bc7gQVDiNMhCO9Q8MV})
