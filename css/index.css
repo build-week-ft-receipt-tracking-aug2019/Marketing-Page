@@ -162,22 +162,23 @@ header button:hover {
   background-size: cover;
   position: relative;
   z-index: -1;
+  padding: 0 auto;
 }
 @media (max-width: 800px) {
   .container .banner-container {
     margin-top: -29px;
+    padding: 4rem;
   }
 }
 @media (max-width: 500px) {
   .container .banner-container {
-    padding: 30px;
-    line-height: 1px;
+    padding: 3rem;
   }
 }
 .container .banner-container h1 {
   color: #ffffff;
   z-index: 1;
-  margin: 0 5px;
+  margin: 0 1rem;
 }
 .container .banner-container h5 {
   color: #ffffff;
@@ -305,7 +306,7 @@ header button:hover {
 @media (max-width: 500px) {
   .container .all-teams .team-row .team-member {
     width: 90%;
-    margin: 5rem auto;
+    margin: 5rem auto 3rem auto;
   }
 }
 .container .all-teams .team-row .team-member h3 {
