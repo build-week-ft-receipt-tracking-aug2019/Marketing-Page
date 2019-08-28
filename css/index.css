@@ -139,6 +139,7 @@ header button:hover {
   display: block;
   padding: 10px;
   text-decoration: none;
+  color: #ffffff;
 }
 .header-image {
   width: 100%;
@@ -146,6 +147,9 @@ header button:hover {
 .container {
   width: 100%;
   margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 .container .banner-container {
   display: flex;
@@ -158,6 +162,11 @@ header button:hover {
   background-size: cover;
   position: relative;
   z-index: -1;
+}
+@media (max-width: 800px) {
+  .container .banner-container {
+    margin-top: -29px;
+  }
 }
 .container .banner-container h1 {
   color: white;
@@ -172,15 +181,27 @@ header button:hover {
 }
 .container .banner-container .header-cta {
   margin-top: 40px;
-  padding: 12px 25px;
+  padding: 0.8% 1.5%;
   width: 10%;
   background-color: #003b36;
   color: white;
   font-family: Lato, sans-serif;
-  font-size: 15px;
+  font-size: 1.5rem;
   font-weight: 700;
   letter-spacing: 2px;
   z-index: 1;
+}
+@media (max-width: 800px) {
+  .container .banner-container .header-cta {
+    width: 20%;
+    padding: 1.8% 2%;
+  }
+}
+@media (max-width: 500px) {
+  .container .banner-container .header-cta {
+    width: 30%;
+    padding: 1.8% 2%;
+  }
 }
 .container .trackify {
   width: 80%;
@@ -194,34 +215,79 @@ header button:hover {
   width: 80%;
   margin: 8rem auto;
 }
+.container .all-teams .meet-the-team {
+  margin: 5rem auto;
+}
 .container .all-teams .team-lead {
-  width: 30%;
+  width: 40%;
   margin: 10rem auto;
-  padding: 2rem 5rem;
+  padding: 2rem 3rem;
   text-align: left;
   border: 1px solid #e6e8e6;
+}
+@media (max-width: 800px) {
+  .container .all-teams .team-lead {
+    width: 70%;
+    margin: 10rem auto;
+  }
+}
+@media (max-width: 500px) {
+  .container .all-teams .team-lead {
+    width: 90%;
+    margin: 8rem auto;
+  }
 }
 .container .all-teams .team-lead .team-lead-photo {
   width: 30%;
   height: 10%;
   border-radius: 50%;
+  margin-left: 105px;
+  margin-top: -73px;
+}
+@media (max-width: 800px) {
+  .container .all-teams .team-lead .team-lead-photo {
+    margin-left: 139px;
+    margin-top: -73px;
+  }
+}
+@media (max-width: 500px) {
+  .container .all-teams .team-lead .team-lead-photo {
+    margin-left: 115px;
+    margin-top: -73px;
+  }
 }
 .container .all-teams .team-lead .team-lead-image {
   width: 80%;
   border-radius: 50%;
-  margin-left: 105px;
-  margin-top: -73px;
 }
 .container .all-teams .team-row {
   display: flex;
-  margin: 42px 0;
+  margin: 5rem 0;
+}
+@media (max-width: 800px) {
+  .container .all-teams .team-row {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }
 }
 .container .all-teams .team-row .team-member {
-  width: 26%;
   margin: 0 auto;
-  padding: 1rem 5rem;
+  padding: 1rem 1rem;
   text-align: left;
   border: 1px solid #e6e8e6;
+}
+@media (max-width: 800px) {
+  .container .all-teams .team-row .team-member {
+    width: 70%;
+    margin: 6rem auto;
+  }
+}
+@media (max-width: 500px) {
+  .container .all-teams .team-row .team-member {
+    width: 90%;
+    margin: 8rem auto;
+  }
 }
 .container .all-teams .team-row .team-member h3 {
   color: green;
@@ -239,8 +305,20 @@ header button:hover {
 .container .all-teams .team-row .team-member .team-member-image {
   width: 80%;
   border-radius: 50%;
-  margin-left: 105px;
+  margin-left: 148px;
   margin-top: -73px;
+}
+@media (max-width: 800px) {
+  .container .all-teams .team-row .team-member .team-member-image {
+    margin-left: 139px;
+    margin-top: -73px;
+  }
+}
+@media (max-width: 500px) {
+  .container .all-teams .team-row .team-member .team-member-image {
+    margin-left: 115px;
+    margin-top: -73px;
+  }
 }
 .container .all-teams .team-row .social {
   display: flex;
@@ -257,6 +335,11 @@ header button:hover {
   margin-top: 2rem;
   margin-bottom: 9rem;
 }
+@media (max-width: 500px) {
+  .container .products-services {
+    padding: 0 6rem;
+  }
+}
 .container .products-services h2 {
   color: #5bba6f;
 }
@@ -265,6 +348,14 @@ header button:hover {
   display: flex;
   justify-content: center;
   margin-top: 4rem;
+}
+.container .products-services .products-section .middle-product {
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .container .products-services .products-section .middle-product {
+    display: none;
+  }
 }
 .container .get-started {
   padding: 10rem 0;
@@ -275,7 +366,7 @@ header button:hover {
 }
 .container .get-started button {
   margin-top: 40px;
-  padding: 12px 25px;
+  padding: 0.8% 1.5%;
   width: 10%;
   background-color: #003b36;
   color: white;
@@ -284,6 +375,18 @@ header button:hover {
   font-weight: 700;
   letter-spacing: 2px;
   z-index: 1;
+}
+@media (max-width: 800px) {
+  .container .get-started button {
+    width: 20%;
+    padding: 1.8% 2%;
+  }
+}
+@media (max-width: 500px) {
+  .container .get-started button {
+    width: 30%;
+    padding: 1.8% 2%;
+  }
 }
 .team-member:hover {
   background-color: #5bba6f;
