@@ -9,5 +9,4 @@ The other sections of our team include the following departments:
 - Backend
 - Frontend
 
-Below is a link to view our entire teams handles for Github and Twitter
-[Click here to show Google Doc Preview of our Team!](https://docs.google.com/viewer?url=${https://drive.google.com/open?id=17MG1lNP8OlkuF_bc7gQVDiNMhCO9Q8MV})
+Below are links to view our entire teams handles for Linked-in, Github and Twitter:
