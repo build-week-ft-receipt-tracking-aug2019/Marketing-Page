@@ -11,6 +11,10 @@ h2 {
   font-size: 2.5rem;
   color: #249633;
 }
+h3 {
+  font-size: 2rem;
+  color: #003b36;
+}
 h1,
 h2,
 h3,
@@ -39,6 +43,11 @@ header {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+}
+@media (max-width: 500px) {
+  header {
+    display: none;
+  }
 }
 header nav {
   display: flex;
@@ -73,9 +82,59 @@ header button:hover {
   background: #e6e8e6;
   color: #003b36;
 }
+.mobileHeader {
+  display: none;
+  background-color: transparent;
+}
+@media (max-width: 500px) {
+  .mobileHeader {
+    display: block;
+  }
+}
+.mobileHeader .collapsible-menu {
+  background-color: #003b36;
+  padding: 10px 0 10 50px;
+  border-bottom: 3px solid #eee;
+  display: block;
+  cursor: pointer;
+}
+.mobileHeader .collapsible-menu label {
+  font-size: 2rem;
+  padding-left: 55px;
+  font-family: 'Lato', sans-serif;
+  color: black;
+  background: url(https://image.flaticon.com/icons/svg/462/462998.svg) no-repeat left center;
+  margin-left: 10px;
+  filter: invert(1);
+}
+.mobileHeader .collapsible-menu input:checked ~ label {
+  background: url(https://image.flaticon.com/icons/svg/151/151882.svg) no-repeat left center;
+}
+.mobileHeader .collapsible-menu input:checked ~ .menu-content {
+  max-height: 100%;
+}
+.mobileHeader .collapsible-menu #menu {
+  display: none;
+}
+.mobileHeader .collapsible-menu .menu-content {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 0 0 50px;
+}
+.mobileHeader .collapsible-menu .menu-content ul {
+  list-style-type: none;
+  padding-bottom: 20px;
+  color: #ffffff;
+}
+.mobileHeader .collapsible-menu .menu-content ul a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #ffffff;
+}
 main {
   margin: 0 5%;
-  height: 2000px;
+  height: auto;
 }
 main section {
   width: 100%;
@@ -120,6 +179,11 @@ main #search #receipts .receipt {
   color: #003b36;
   cursor: pointer;
 }
+@media (max-width: 700px) {
+  main #search #receipts .receipt {
+    width: 32%;
+  }
+}
 main #search #receipts .receipt:hover {
   border: 2px dashed #249633;
 }
@@ -134,12 +198,71 @@ main #upload #gradient {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 200px;
+  height: 100px;
   width: 100%;
   background: linear-gradient(45deg, #003b36, #5bba6f);
 }
 main #upload #gradient h2 {
   color: #ffffff;
+}
+main #upload #forms {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 100px 0;
+  width: 100%;
+  overflow: hidden;
+}
+main #upload #forms img {
+  width: 55%;
+  height: 600px;
+  object-fit: cover;
+}
+@media (max-width: 1100px) {
+  main #upload #forms img {
+    display: none;
+  }
+}
+main #upload form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 35%;
+  min-height: 600px;
+  min-width: 350px;
+  background: #fafafa;
+  border: 2px solid #eee;
+  margin: 50px 0;
+  box-sizing: border-box;
+}
+@media (max-width: 1100px) {
+  main #upload form {
+    width: 60%;
+  }
+}
+@media (max-width: 550px) {
+  main #upload form {
+    width: 100%;
+    min-width: auto;
+  }
+}
+main #upload form input {
+  width: 70%;
+  background: #e6e8e6;
+  color: #249633;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 7px;
+  margin-bottom: 20px;
+}
+main #upload form input[type="submit"] {
+  margin-top: 50px;
+  background: #249633;
+  color: #ffffff;
+  cursor: pointer;
 }
 footer {
   width: 100%;
@@ -152,17 +275,22 @@ footer {
 }
 footer * {
   color: #ffffff;
+  text-align: center;
 }
 footer a {
   margin-bottom: 10px;
 }
 footer div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
   border: 2px solid #ffffff44;
   cursor: pointer;
   margin-bottom: 20px;
 }
 footer img {
-  padding: 4px;
-  height: 55px;
+  margin: 4px;
+  height: 40px;
   filter: invert(1);
 }
