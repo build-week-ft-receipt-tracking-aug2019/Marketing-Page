@@ -1,3 +1,5 @@
+
+// Colors
 // Variables
 
 @darkGreen:#003b36;
@@ -6,10 +8,15 @@
 @grey:#e6e8e6;
 @white:#ffffff;
 
+// devices screen sizes
 @mobile: ~"(max-width:800px)";
+@tablet: ~"(max-width: 800px)";
+@mob: ~"(max-width: 500px)";
 
-
-
+.flex-column() {
+    display: flex;
+    flex-direction: column;
+}
 
 // mixin
 .flex(@direction: row, @justify: center, @align: center, @wrap: wrap){
@@ -18,4 +25,20 @@
     justify-content:@justify;
     align-items: @align;
     flex-wrap: @wrap;
+}
+
+//Namespaces
+#about-page {
+    .cta(@color){
+        margin-top: 4rem;
+        padding: 0.8% 1.5%;
+        width:20%;
+        background-color: @color;
+        color: white;
+        font-family: Lato, sans-serif;
+        font-size: 1.6rem;
+        font-weight: 700;
+        letter-spacing: 0.3rem;
+        z-index: 1;
+    }
 }
