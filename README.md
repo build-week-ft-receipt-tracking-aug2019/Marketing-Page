@@ -1,13 +1,13 @@
 ### Other Components of This Project
-​
+
 - [iOS App](https://github.com/build-week-ft-receipt-tracking-aug2019/Mobile-App)
 - [Android App](https://github.com/build-week-ft-receipt-tracking-aug2019/Android-App)
 - [Backend](https://github.com/build-week-ft-receipt-tracking-aug2019/Backend)
 - [Frontend](https://github.com/build-week-ft-receipt-tracking-aug2019/Front-End)
 - [Marketing Page](https://github.com/build-week-ft-receipt-tracking-aug2019/Marketing-Page)
-​
+
 ### Team Members
-​
+
 |Role|Name / LinkedIn|Twitter|Github|Instagram|
 |---|---|---|---|---|
 |iOS Unit 1 Dev|[Percival Ngan](https://www.linkedin.com/in/percival-ngan-869381163/)|[@PercivalNgan](https://twitter.com/PercivalNgan)|[PercivalN](https://github.com/PercivalN)|
