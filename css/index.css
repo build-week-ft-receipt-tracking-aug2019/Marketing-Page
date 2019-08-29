@@ -192,7 +192,7 @@ header button:hover {
   position: absolute;
 }
 .container .banner-container .header-cta {
-  margin-top: 40px;
+  margin-top: 4rem;
   padding: 0.8% 1.5%;
   width: 10%;
   background-color: #003b36;
@@ -200,7 +200,7 @@ header button:hover {
   font-family: Lato, sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
-  letter-spacing: 2px;
+  letter-spacing: 0.2rem;
   z-index: 1;
 }
 @media (max-width: 800px) {
@@ -218,6 +218,11 @@ header button:hover {
 .container .trackify {
   width: 80%;
   margin: 5rem auto 0 auto;
+}
+.container .trackify span {
+  position: relative;
+  bottom: 1.5rem;
+  right: 0.5rem;
 }
 .container .all-teams {
   display: flex;
@@ -361,11 +366,14 @@ header button:hover {
 }
 @media (max-width: 500px) {
   .container .products-services {
-    padding: 0 6rem;
+    padding: 0 3rem;
   }
 }
 .container .products-services h2 {
   color: #5bba6f;
+}
+.container .products-services p {
+  padding: 0 1.5rem;
 }
 .container .products-services .products-section {
   width: 100%;
@@ -389,15 +397,15 @@ header button:hover {
   background: radial-gradient(linear, #002407 49%, #05622f 100%, #02a09f 100%, #00d4ff 100%);
 }
 .container .get-started button {
-  margin-top: 40px;
+  margin-top: 4rem;
   padding: 0.8% 1.5%;
   width: 10%;
   background-color: #003b36;
   color: white;
   font-family: Lato, sans-serif;
-  font-size: 15px;
+  font-size: 1.5rem;
   font-weight: 700;
-  letter-spacing: 2px;
+  letter-spacing: 0.2rem;
   z-index: 1;
 }
 @media (max-width: 800px) {
