@@ -9,12 +9,12 @@
 
     //Banner-container section starts here
     .banner-container {      
-        #about-page.flex-column();
+        .flex-column();
         justify-content: center;
         align-items: center;
         height: 600px;
         width: 100%;
-        background: black url('/images/banner_image.jpg');
+        background: black url('../images/banner_image.jpg');
         background-size: cover;
         position: relative;
         z-index: -1;
@@ -74,7 +74,7 @@
 
     //The team section starts here
     .all-teams {
-        #about-page.flex-column();
+        .flex-column();
         flex-wrap: wrap;
         align-items: center; 
         width: 80%;
@@ -94,7 +94,7 @@
             display: flex;
             margin: 5rem 0;
             @media @tablet {
-                #about-page.flex-column();
+                .flex-column();
                 margin: 10px;
             }
             .team-member:hover {   
@@ -165,7 +165,7 @@
 
     //Products and services section starts here
     .products-services {
-        #about-page.flex-column();
+        .flex-column();
         align-items: center;
         margin-top: 2rem;
         margin-bottom: 9rem;
