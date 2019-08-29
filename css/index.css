@@ -302,11 +302,15 @@ header button:hover {
     width: 70%;
     margin: 6rem auto;
   }
+  .container .all-teams .team-row .team-member p {
+    font-size: 2rem;
+  }
 }
 @media (max-width: 500px) {
   .container .all-teams .team-row .team-member {
     width: 90%;
     margin: 5rem auto 3rem auto;
+    font-size: 1.9rem;
   }
 }
 .container .all-teams .team-row .team-member h3 {
