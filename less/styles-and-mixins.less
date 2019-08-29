@@ -1,10 +1,12 @@
+
 // Colors
+// Variables
+
 @darkGreen:#003b36;
 @green:#249633;
 @lightGreen:#5bba6f;
 @grey:#e6e8e6;
 @white:#ffffff;
-
 
 // devices screen sizes
 @mobile: ~"(max-width: 800px)";
@@ -31,4 +33,13 @@
         flex-direction: column;
     }
 
+@mobile: ~"(max-width:800px)";
+
+// mixin
+.flex(@direction: row, @justify: center, @align: center, @wrap: wrap){
+    display: flex;
+    flex-direction: @direction;
+    justify-content:@justify;
+    align-items: @align;
+    flex-wrap: @wrap;
 }
